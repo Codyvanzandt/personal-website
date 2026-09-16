@@ -51,7 +51,7 @@ highlight_name: false
 
 I work as a data scientist in the Provost's organization at [Rice University](https://rice.edu), where I measure, model, and otherwise muck about with data in hopes of improving academic life for our faculty. Not by coincidence, I'm also working on master's in statistics from Rice.
 
-Occupationally nomadic, I've been an academic advisor, grad student in English, and software engineer on an energy trading desk. Research-wise, my buzzwords are [Computational Literary Studies](https://jcls.io/), [Cultural Analytics](https://culturalanalytics.org/), or whatever you might call it when folks use quantitative methods to study literature. For a short and highly readable example of scholarship I enjoy, check out [this blog post](https://tedunderwood.com/2017/05/27/finding-the-great-divide/) on the apparent separation between high-brow and popular fiction. 
+Occupationally nomadic, I've been an academic advisor, grad student in English, and software engineer on an energy trading desk. 
 
 Outside the world of data, I enjoy singing sea shanties, reading fantasy fiction, and designing escape-room-style puzzle games.
 
