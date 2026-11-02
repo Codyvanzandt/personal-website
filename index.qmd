@@ -25,9 +25,9 @@ Full-stack Bayesian data science
 :::
 
 ::: {.home-bio}
-I'm Cody, a data scientist at [Rice University](https://rice.edu). I work with data to understand and improve academic life.
+I'm Cody. I measure, model, and otherwise muck about with data. Occupationally nomadic, I've been an academic advisor, a grad student in English, and a software engineer on an energy trading desk.
 
-Here I write about Bayesian modeling, machine learning, and software. Away from the keyboard: fantasy fiction, sea shanties, and puzzle games.
+Outside the world of data, I enjoy singing sea shanties, reading fantasy fiction, and designing escape-room-style puzzle games.
 
 ::: {.home-contact}
 [Say hello ↗](mailto:cody.a.vanzandt@gmail.com)
