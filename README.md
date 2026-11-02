@@ -1,7 +1,8 @@
 # Cody VanZandt · Warm Literary
 
 A Quarto website with a personal homepage, writing index, and a Markdown CV.
-The `quarto/warm-literary` branch is a migration preview, not a production switch.
+Production is published from `master` to GitHub Pages. The `quarto/warm-literary`
+branch retains the migration work and design history.
 
 ## Local preview
 
@@ -28,7 +29,7 @@ Output is written to `_site/`, which is ignored by Git. Shared fonts are bundled
 
 The homepage introduction uses full-size charcoal text for its opening paragraph and smaller muted text for the background and personal details. It has a single “Say hello ↗” email link below the bio and hides the duplicate email footer. Other pages keep the shared email footer. The English graduate-study entry describes study rather than implying a completed degree.
 
-The homepage and writing page have intentional empty states until the first new post is published. Quarto may warn that the empty listing glob matches no documents; that warning is expected on this initial branch. Archived posts are not listed.
+The homepage and writing page have intentional empty states until the first new post is published. Quarto may warn that the empty listing glob matches no documents; that warning is expected until the first post exists. Archived posts are not listed.
 
 ## Create a post
 
@@ -72,8 +73,21 @@ For complex figures, per-chunk size settings are available. The lighter-label ad
 
 `archive/hugo-site/` preserves every originally tracked file from commit `debc11948ac66f3639a3ffcb5c6e936b451483d5`. It includes the four old blog posts, Dumb, Boring, Skeptical, dormant CV sections, and the old Hugo theme/assets. The archive is excluded from Quarto rendering and public resources.
 
-## Deployment boundary
+## Publishing
 
-Netlify settings and the root `netlify.toml` are unchanged. That file still describes the old Hugo build, including its legacy DinnerDay redirect, and must be replaced when switching production to Quarto. It is retained here solely to defer deployment changes while reviewing the branch.
+Push to `master` to rebuild and publish https://codyvanzandt.com through GitHub Pages.
+The `Publish Quarto website` workflow in `.github/workflows/publish.yml` pins Quarto
+to 1.10.18, renders `_site/`, and deploys it using GitHub's Pages artifact workflow.
+It can also be run manually from the repository's Actions tab. Other branches do
+not publish automatically.
 
-The migration commit uses `[skip netlify]` so publishing this branch does not request a Netlify build. Do not merge this branch into production before configuring the Quarto build. No GitHub Action or alternative hosting service is enabled by this migration.
+For a computational article, explicitly render that article locally first, then
+commit its source, necessary assets and updated `_freeze/` results. The full-site
+render on GitHub reuses these results without installing R, Python packages or
+Stan. Preview locally before pushing. The built `_site/` directory stays ignored.
+
+The repository's Pages source is GitHub Actions. Its custom domain and HTTPS are
+configured in Settings → Pages; DNS is managed through the domain registrar.
+Neither website builds nor hosting require Netlify. The original Netlify
+configuration remains available in `archive/hugo-site/netlify.toml` for reference;
+its retired DinnerDay redirect is not part of this site.
