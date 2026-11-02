@@ -1,0 +1,29 @@
+---
+title: "A title with *a little emphasis*"
+description: "A sentence about what the reader will find here."
+author: Cody VanZandt
+date: 2026-11-02
+categories: [Statistics]
+---
+
+{{< include ../../_setup.qmd >}}
+
+Start with an introductory paragraph. Your first paragraph automatically receives the larger opening style.
+
+## A useful question
+
+Write ordinary Markdown here. For a CSV exported from an analysis project:
+
+```{r}
+#| eval: false
+#| label: fig-estimates
+#| fig-cap: "Estimated effects and their uncertainty intervals."
+#| fig-alt: "Group estimates and uncertainty intervals."
+results <- read.csv("posts/your-post/results.csv")
+ggplot(results, aes(estimate, group)) +
+  geom_segment(aes(x = lower, xend = upper, yend = group)) +
+  geom_point(size = 2.5) +
+  labs(x = "Estimated effect", y = NULL)
+```
+
+Replace the example with your analysis results and remove `eval: false` when ready.

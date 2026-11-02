@@ -1,0 +1,54 @@
+---
+title: Cody VanZandt
+pagetitle: Cody VanZandt
+title-block-style: none
+toc: false
+body-classes: home-page
+listing:
+  contents: posts/**/*.qmd
+  sort: "date desc"
+  max-items: 3
+  template: _templates/listing.ejs.md
+  fields: [date, title, description]
+  date-format: "MMM D, YYYY"
+  sort-ui: false
+  filter-ui: false
+---
+
+::: {.home-intro}
+::: {.home-heading}
+::: {.eyebrow}
+Data science · statistics · literature
+:::
+
+# A little data.<br>A lot of *curiosity.* {.home-title}
+:::
+
+::: {.home-portrait}
+![](images/avatar.jpg){fig-alt="Cody VanZandt" width=128 height=128}
+:::
+
+::: {.home-bio}
+I work as a data scientist in the Provost's organization at [Rice University](https://rice.edu), where I measure, model, and otherwise muck about with data in hopes of improving academic life for our faculty. Not by coincidence, I'm also working on a master's in statistics from Rice.
+
+Occupationally nomadic, I've been an academic advisor, grad student in English, and software engineer on an energy trading desk.
+
+Outside the world of data, I enjoy singing sea shanties, reading fantasy fiction, and designing escape-room-style puzzle games.
+
+::: {.home-contact}
+[Say hello](mailto:cody.a.vanzandt@gmail.com) · [GitHub](https://github.com/Codyvanzandt) · [Curriculum vitae](cv/index.qmd)
+:::
+:::
+:::
+
+::: {.writing-heading}
+## Recent writing
+[All writing →](writing.qmd)
+:::
+
+::: {.writing-empty}
+New essays and technical notes will appear here.
+:::
+
+::: {#listing}
+:::

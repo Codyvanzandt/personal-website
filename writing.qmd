@@ -1,0 +1,21 @@
+---
+title: "Notes & *essays*"
+subtitle: "On statistics, code, and the occasional literary detour."
+toc: false
+body-classes: writing-page
+listing:
+  contents: posts/**/*.qmd
+  sort: "date desc"
+  template: _templates/listing.ejs.md
+  fields: [date, title, description]
+  date-format: "MMM D, YYYY"
+  sort-ui: false
+  filter-ui: false
+---
+
+::: {.writing-empty}
+I'm making space here for new writing. Essays and technical notes will appear as they're published.
+:::
+
+::: {#listing}
+:::

@@ -1,0 +1,67 @@
+project:
+  type: website
+  output-dir: _site
+  execute-dir: project
+  render:
+    - index.qmd
+    - writing.qmd
+    - cv/index.qmd
+    - posts/**/*.qmd
+    - '!archive/**'
+    - '!_templates/**'
+  resources:
+    - fonts/**
+    - images/**
+    - '!archive/**'
+    - '!R/**'
+    - '!scripts/**'
+    - '!_templates/**'
+website:
+  title: Cody VanZandt
+  site-url: https://codyvanzandt.com
+  description: "Cody VanZandt: data science, statistics, and literature."
+  search: false
+  navbar:
+    background: light
+    right:
+      - text: Home
+        href: index.qmd
+      - text: Writing
+        href: writing.qmd
+      - text: CV
+        href: cv/index.qmd
+  page-footer:
+    left: Cody VanZandt
+    right: Written with Quarto
+format:
+  html:
+    theme: [litera, warm.scss]
+    toc: true
+    toc-title: On this page
+    toc-depth: 2
+    code-copy: true
+    code-fold: true
+    code-summary: Show R code
+    mainfont: Source Serif 4
+    fontsize: 18px
+    linestretch: 1.8
+    embed-resources: true
+    grid:
+      body-width: 680px
+      sidebar-width: 0px
+      margin-width: 170px
+      gutter-width: 40px
+execute:
+  echo: true
+  warning: false
+  message: false
+  cache: false
+  freeze: true
+knitr:
+  opts_chunk:
+    dev: ragg_png
+    dpi: 200
+    fig.retina: 1
+    fig.width: 7.2
+    fig.height: 4
+lang: en

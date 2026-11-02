@@ -1,0 +1,144 @@
+/*-- scss:defaults --*/
+$body-bg: #faf7f0;
+$body-color: #302d2a;
+$link-color: #873b47;
+$text-muted: #72675f;
+$border-color: #d9cfc2;
+$font-family-base: "Source Serif 4", Georgia, serif;
+$font-family-sans-serif: "DM Sans", sans-serif;
+$headings-font-family: "Libre Baskerville", Georgia, serif;
+$headings-font-weight: 400;
+$navbar-bg: #faf7f0;
+$navbar-fg: #302d2a;
+$navbar-hl: #873b47;
+$code-block-bg: #f0ebe2;
+$code-color: #873b47;
+
+/*-- scss:rules --*/
+@font-face {font-family:"DM Sans";src:url("fonts/DM-Sans.ttf") format("truetype");font-weight:100 1000;font-style:normal;}
+@font-face {font-family:"Source Serif 4";src:url("fonts/Source-Serif-4.ttf") format("truetype");font-weight:200 900;font-style:normal;}
+@font-face {font-family:"Libre Baskerville";src:url("fonts/Libre-Baskerville.ttf") format("truetype");font-weight:400 700;font-style:normal;}
+@font-face {font-family:"Libre Baskerville";src:url("fonts/Libre-Baskerville-Italic.ttf") format("truetype");font-weight:400 700;font-style:italic;}
+body {font-family:"Source Serif 4",Georgia,serif;}
+.navbar {padding:24px 0;background:#faf7f0!important;border-bottom:1px solid #d9cfc2;}
+.navbar-container {max-width:1040px;margin:auto;}
+.navbar-brand {font-family:"Libre Baskerville",Georgia,serif;font-size:19px;letter-spacing:-.6px;}
+.navbar-nav {font-family:"DM Sans",sans-serif;font-size:13px;gap:15px;}
+#quarto-content {padding-top:38px;}
+#title-block-header {border-bottom:1px solid #d9cfc2;margin-bottom:30px;padding-bottom:25px;}
+#title-block-header h1 {font-size:49px;letter-spacing:-1.6px;line-height:1.2;font-weight:400;margin-bottom:20px;max-width:17ch;text-wrap:balance;}
+#title-block-header h1 em {color:#873b47;font-style:italic;}
+.quarto-title {display:flex;flex-direction:column;}
+.quarto-title .quarto-categories {order:-1;}
+#title-block-header .subtitle {font-family:"Source Serif 4",Georgia,serif;font-size:22px;line-height:1.5;color:#72675f;}
+.quarto-title-meta {font-family:"DM Sans",sans-serif;font-size:13px;color:#72675f;}
+.quarto-title-meta-heading {font-size:10px;letter-spacing:1px;}
+#title-block-header .quarto-title-meta-contents p {margin:0;font:400 13px/1.6 "DM Sans",sans-serif;}
+.quarto-categories {font:500 10px/1.5 "DM Sans",sans-serif;letter-spacing:1.5px;text-transform:uppercase;color:#873b47;margin-bottom:20px;}
+.quarto-category {border:0!important;padding:0!important;margin-right:12px;font-size:10px!important;letter-spacing:1.4px;}
+main p {margin-bottom:21px;}
+main .lead {font:400 21px/1.7 "Source Serif 4",Georgia,serif;}
+#quarto-document-content > p:first-of-type {font:400 21px/1.7 "Source Serif 4",Georgia,serif;}
+main h2 {font:400 25px/1.4 "Libre Baskerville",Georgia,serif;letter-spacing:-.5px;border-bottom:0;margin-top:35px;margin-bottom:18px;padding:0;}
+#TOC {font-family:"DM Sans",sans-serif;font-size:12px;}
+#TOC h2 {font-family:"DM Sans",sans-serif;font-size:12px;font-weight:500;}
+.sidebar nav[role=doc-toc] ul>li>a.active {border-left-color:#873b47;color:#873b47!important;}
+.sidebar nav[role=doc-toc] ul>li>a {color:#72675f;}
+.cell-output-display {margin:0;}
+.cell-output-display img {display:block;width:100%;height:auto;}
+figure {margin:25px 0 22px;}
+figure.quarto-float {border:0;padding:0;}
+.quarto-figure {margin:0;}
+.cell:has(figure) {margin-bottom:26px;}
+figcaption,.quarto-float-caption {font:400 14px/1.65 "Source Serif 4",Georgia,serif;color:#72675f;margin-top:10px;text-align:left!important;}
+.cell details {margin:20px 0;}
+.cell summary {font:400 12px/1.7 "DM Sans",sans-serif;color:#873b47;}
+div.sourceCode {border:1px solid #d9cfc2;border-radius:0;}
+pre.sourceCode {font-size:12px;line-height:1.7;padding:16px;}
+.callout {background:transparent!important;border:0;border-left:3px solid #873b47;border-radius:0;padding:7px 0 7px 19px;margin:28px 0;}
+.callout .callout-title-container {font:500 12px/1.6 "DM Sans",sans-serif;color:#873b47;}
+.callout .callout-header {background:transparent!important;}
+.callout .callout-body {font:400 16px/1.7 "Source Serif 4",Georgia,serif;}
+.callout-icon-container {display:none;}
+div.callout.callout-note.callout-style-simple {border:0;border-left:3px solid #873b47;border-radius:0;background:transparent!important;}
+.preview-note {font:400 12px/1.7 "DM Sans",sans-serif;color:#72675f;border-top:1px solid #d9cfc2;padding-top:20px;margin-top:30px;}
+.nav-footer {font:400 11px/1.6 "DM Sans",sans-serif;color:#72675f;border-top:1px solid #d9cfc2;padding-top:22px;margin-top:30px;}
+@media(max-width:760px){#title-block-header h1{font-size:34px;}#title-block-header .subtitle{font-size:20px;}#quarto-content{padding-top:20px;}main h2{font-size:23px;}body{font-size:17px;}.navbar{padding:16px 10px;}}
+
+/* Homepage: a personal introduction followed by the most recent writing. */
+.home-page #quarto-content {grid-template-columns:[screen-start] 1fr [body-start] minmax(0,780px) [body-end] 1fr [screen-end];padding:0 32px;}
+.home-page main.content {grid-column:body-start/body-end!important;margin-top:0;}
+.home-page #title-block-header {display:none;}
+.home-intro {display:grid;grid-template-columns:minmax(0,1fr) 128px;gap:30px;align-items:start;padding:65px 0 48px;}
+.eyebrow {font:500 11px/1.5 "DM Sans",sans-serif;letter-spacing:1.6px;text-transform:uppercase;color:#873b47;margin-bottom:23px;}
+.eyebrow p {margin:0;}
+.eyebrow p {font:inherit;color:inherit;}
+main .home-title {font:400 46px/1.2 "Libre Baskerville",Georgia,serif;letter-spacing:-1.6px;margin:0;max-width:none;}
+.home-title em {color:#873b47;}
+.home-portrait {padding-top:36px;}
+.home-portrait img {border-radius:50%;width:128px;height:128px;object-fit:cover;object-position:center;}
+.home-portrait p {margin:0;}
+.home-bio {grid-column:1/-1;font:400 18px/1.8 "Source Serif 4",Georgia,serif;}
+.home-bio p:last-child {margin-bottom:0;}
+.home-contact {font:500 13px/1.8 "DM Sans",sans-serif;color:#72675f;margin-top:23px;}
+.home-contact a {display:inline-block;white-space:nowrap;}
+.home-contact p {font:inherit;color:inherit;}
+.home-contact a {text-decoration:none;}
+.home-contact a:hover {text-decoration:underline;}
+.writing-heading {border-top:2px solid #302d2a;padding-top:22px;display:flex;gap:20px;justify-content:space-between;align-items:baseline;}
+.writing-heading h2 {font-size:25px;margin:0;}
+.writing-heading p {font:400 12px/1.5 "DM Sans",sans-serif;margin:0;}
+.writing-empty {font:400 17px/1.8 "Source Serif 4",Georgia,serif;color:#72675f;padding:25px 0 35px;}
+.writing-empty p {margin:0;}
+body:has(.quarto-post) .writing-empty {display:none;}
+.listing-no-matching {display:none!important;}
+.quarto-listing-default .quarto-post {padding:25px 0;border-bottom:1px solid #d9cfc2;margin:0;gap:24px;}
+.quarto-post .metadata {font:400 11px/1.7 "DM Sans",sans-serif;color:#72675f;flex-basis:100px;}
+.quarto-post .body h3 {font:400 24px/1.35 "Source Serif 4",Georgia,serif;letter-spacing:-.4px;}
+.quarto-post .body .listing-description {font:400 16px/1.7 "Source Serif 4",Georgia,serif;color:#72675f;}
+.quarto-post .listing-title a {color:#302d2a;}
+.quarto-post .listing-title a:hover {color:#873b47;}
+.editorial-posts .quarto-post {display:grid;grid-template-columns:105px minmax(0,1fr);gap:23px;border-bottom:1px solid #d9cfc2;padding:25px 0;}
+.post-date {font:400 11px/1.7 "DM Sans",sans-serif;color:#72675f;padding-top:5px;}
+.post-body h3 {font:400 24px/1.35 "Source Serif 4",Georgia,serif;margin:0 0 8px;letter-spacing:-.4px;}
+.post-body h3 a {color:#302d2a;text-decoration:none;}
+.post-body h3 a:hover {color:#873b47;}
+.post-body p {font:400 16px/1.7 "Source Serif 4",Georgia,serif;color:#72675f;margin:0;}
+
+/* CV entries remain headings and paragraphs in a single Markdown file. */
+.cv-page #title-block-header h1 {font-size:41px;max-width:none;}
+.cv-page #title-block-header .subtitle {font-size:20px;}
+.cv-page #title-block-header {margin-bottom:20px;}
+.cv-contact {font:400 13px/1.7 "DM Sans",sans-serif;color:#72675f;margin-bottom:35px;}
+.cv-page main h2 {font-size:23px;color:#873b47;border-top:1px solid #d9cfc2;padding-top:22px;margin:32px 0 25px;}
+.cv-entry {display:grid;grid-template-columns:125px minmax(0,1fr);gap:22px;margin-bottom:27px;}
+.cv-dates {font:400 11px/1.6 "DM Sans",sans-serif;color:#72675f;padding-top:6px;}
+.cv-dates p {font:inherit;color:inherit;}
+.cv-entry h3 {font:500 21px/1.4 "Source Serif 4",Georgia,serif;margin:0 0 3px;letter-spacing:-.2px;}
+.cv-entry p {font:400 16px/1.7 "Source Serif 4",Georgia,serif;margin:0 0 5px;color:#72675f;}
+.cv-entry .cv-dates p {font:400 11px/1.6 "DM Sans",sans-serif;color:#72675f;}
+.cv-page main section > p {font:400 16px/1.8 "Source Serif 4",Georgia,serif;}
+.nav-footer p {font:inherit;color:inherit;}
+.cv-entry p.cv-institution {color:#302d2a;}
+.cv-institution a {color:inherit;}
+.cv-detail a.cv-institution {color:#302d2a;text-decoration:none;}
+.cv-detail a.cv-institution:hover {text-decoration:underline;}
+.cv-contact p {font:inherit;color:inherit;}
+.cv-contact a {text-decoration:none;}
+.cv-contact a:hover {text-decoration:underline;}
+.cv-page .anchorjs-link {font-size:16px;}
+.cv-page #quarto-document-content > p {font:400 16px/1.8 "Source Serif 4",Georgia,serif;}
+.cv-page #quarto-document-content > p:first-of-type {font:400 16px/1.8 "Source Serif 4",Georgia,serif;}
+@media(max-width:650px){
+ .home-page #quarto-content {padding:0 22px;}
+ .home-intro {grid-template-columns:minmax(0,1fr) 80px;gap:20px;padding:38px 0 35px;}
+ main .home-title {font-size:33px;letter-spacing:-1.2px;}
+ .home-portrait {padding-top:40px;}
+ .home-portrait img {width:80px;height:80px;}
+ .home-bio {font-size:17px;}
+ .eyebrow {font-size:10px;letter-spacing:1px;}
+ .cv-entry {grid-template-columns:1fr;gap:4px;}
+ .cv-page #title-block-header h1 {font-size:33px;}
+ .writing-heading {flex-wrap:wrap;gap:8px;}
+ .editorial-posts .quarto-post {grid-template-columns:1fr;gap:7px;}
+}

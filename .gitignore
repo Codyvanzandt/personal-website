@@ -5,3 +5,12 @@
 /resources/
 public/
 .Rproj.user
+
+# Quarto local state and rendered output; frozen computation IS tracked.
+/.quarto/
+/_site/
+/.Rhistory
+/.RData
+**/.DS_Store
+
+**/*.quarto_ipynb
