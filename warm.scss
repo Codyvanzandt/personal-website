@@ -69,11 +69,12 @@ div.callout.callout-note.callout-style-simple {border:0;border-left:3px solid #8
 .home-page #quarto-content {grid-template-columns:[screen-start] 1fr [body-start] minmax(0,780px) [body-end] 1fr [screen-end];padding:0 32px;}
 .home-page main.content {grid-column:body-start/body-end!important;margin-top:0;}
 .home-page #title-block-header {display:none;}
-.home-intro {display:grid;grid-template-columns:minmax(0,1fr) 128px;gap:30px;align-items:start;padding:65px 0 48px;}
+.home-intro {display:block;padding:62px 0 48px;}
+.home-heading {margin-bottom:28px;}
 .eyebrow {font:500 11px/1.5 "DM Sans",sans-serif;letter-spacing:1.6px;text-transform:uppercase;color:#873b47;margin-bottom:23px;}
 .eyebrow p {margin:0;}
 .eyebrow p {font:inherit;color:inherit;}
-main .home-title {font:400 46px/1.2 "Libre Baskerville",Georgia,serif;letter-spacing:-1.6px;margin:0;max-width:none;}
+main .home-title {font:400 49px/1.2 "Libre Baskerville",Georgia,serif;letter-spacing:-1.6px;margin:0;max-width:none;}
 .home-title em {color:#873b47;}
 .home-subtitle,.home-subtitle p {font:400 15px/1.6 "DM Sans",sans-serif;color:#72675f;margin:14px 0 0;letter-spacing:normal;}
 .home-portrait {padding-top:4px;}
@@ -86,6 +87,7 @@ main .home-title {font:400 46px/1.2 "Libre Baskerville",Georgia,serif;letter-spa
 .home-contact p {font:inherit;color:inherit;}
 .home-contact a {text-decoration:none;}
 .home-contact a:hover {text-decoration:underline;}
+.home-page footer.footer {display:none;}
 .writing-heading {border-top:2px solid #302d2a;padding-top:22px;display:flex;gap:20px;justify-content:space-between;align-items:baseline;}
 .writing-heading h2 {font-size:25px;margin:0;}
 .writing-heading p {font:400 12px/1.5 "DM Sans",sans-serif;margin:0;}
@@ -136,8 +138,8 @@ body:has(.quarto-post) .writing-empty {display:none;}
 .cv-page #quarto-document-content > p:first-of-type {font:400 16px/1.8 "Source Serif 4",Georgia,serif;}
 @media(max-width:650px){
  .home-page #quarto-content {padding:0 22px;}
- .home-intro {grid-template-columns:minmax(0,1fr) 80px;gap:20px;padding:38px 0 35px;}
- main .home-title {font-size:33px;letter-spacing:-1.2px;}
+ .home-intro {padding:38px 0 35px;}
+ main .home-title {font-size:36px;letter-spacing:-1.2px;}
  .home-portrait {padding-top:40px;}
  .home-portrait img {width:80px;height:80px;}
  .home-bio {font-size:17px;}

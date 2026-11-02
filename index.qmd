@@ -18,14 +18,10 @@ listing:
 ::: {.home-intro}
 ::: {.home-heading}
 ::: {.eyebrow}
-Data science · statistics · software
+Full-stack Bayesian data science
 :::
 
-# Cody *VanZandt* {.home-title}
-:::
-
-::: {.home-portrait}
-![](images/avatar.jpg){fig-alt="Cody VanZandt" width=128 height=128}
+# Have *priors*,<br>will travel. {.home-title}
 :::
 
 ::: {.home-bio}
@@ -34,6 +30,10 @@ I work as a full-stack data scientist in the Provost's organization at [Rice Uni
 Occupationally nomadic, I've been an academic advisor, grad student in English, and software engineer on an energy trading desk.
 
 Outside the world of data, I enjoy singing sea shanties, reading fantasy fiction, and designing escape-room-style puzzle games.
+
+::: {.home-contact}
+[Say hello ↗](mailto:cody.a.vanzandt@gmail.com)
+:::
 
 :::
 :::

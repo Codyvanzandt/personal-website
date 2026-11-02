@@ -19,14 +19,14 @@ Output is written to `_site/`, which is ignored by Git. Shared fonts are bundled
 
 ## Where to edit
 
-- `index.qmd`: a single name heading with burgundy italic emphasis, a small subject line, the bio and portrait, and the three most recent posts. The opening identifies the role as full-stack data scientist.
+- `index.qmd`: a pictureless introduction, the descriptor “Full-stack Bayesian data science,” and “Have priors, will travel.” with burgundy italic emphasis on “priors.” The name appears in the navigation; the existing bio and most recent posts follow.
 - `cv/index.qmd`: the CV in one Markdown document, with year-only employment dates, education end years, ongoing master's study, and current methods/computing details.
 - `writing.qmd`: all new writing, newest first.
 - `warm.scss`: shared typography, color, layout and CV styles over Litera.
 - `R/plot-style.R`: the plotting theme, categorical and continuous scales, and lighter axis-label rendering.
 - `_setup.qmd`: shared R setup for computational articles.
 
-The shared footer contains the email address; the homepage and CV do not repeat a contact-link row. The English graduate-study entry describes study rather than implying a completed degree.
+The homepage has a single “Say hello ↗” email link below the bio and hides the duplicate email footer. Other pages keep the shared email footer. The English graduate-study entry describes study rather than implying a completed degree.
 
 The homepage and writing page have intentional empty states until the first new post is published. Quarto may warn that the empty listing glob matches no documents; that warning is expected on this initial branch. Archived posts are not listed.
 
