@@ -17,11 +17,11 @@ listing:
 
 ::: {.home-intro}
 ::: {.home-heading}
-# Cody VanZandt {.home-title}
-
-::: {.home-subtitle}
-Full-stack data scientist
+::: {.eyebrow}
+Data science · statistics · software
 :::
+
+# Cody *VanZandt* {.home-title}
 :::
 
 ::: {.home-portrait}
@@ -29,7 +29,7 @@ Full-stack data scientist
 :::
 
 ::: {.home-bio}
-I work as a data scientist in the Provost's organization at [Rice University](https://rice.edu), where I measure, model, and otherwise muck about with data in hopes of improving academic life for our faculty. Not by coincidence, I'm also working on a master's in statistics from Rice.
+I work as a full-stack data scientist in the Provost's organization at [Rice University](https://rice.edu), where I measure, model, and otherwise muck about with data in hopes of improving academic life for our faculty. Not by coincidence, I'm also working on a master's in statistics from Rice.
 
 Occupationally nomadic, I've been an academic advisor, grad student in English, and software engineer on an energy trading desk.
 

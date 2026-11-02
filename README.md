@@ -19,7 +19,7 @@ Output is written to `_site/`, which is ignored by Git. Shared fonts are bundled
 
 ## Where to edit
 
-- `index.qmd`: the existing bio and portrait, a quiet full-stack data scientist subtitle, and the three most recent posts.
+- `index.qmd`: a single name heading with burgundy italic emphasis, a small subject line, the bio and portrait, and the three most recent posts. The opening identifies the role as full-stack data scientist.
 - `cv/index.qmd`: the CV in one Markdown document, with year-only employment dates, education end years, ongoing master's study, and current methods/computing details.
 - `writing.qmd`: all new writing, newest first.
 - `warm.scss`: shared typography, color, layout and CV styles over Litera.

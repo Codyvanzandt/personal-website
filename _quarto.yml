@@ -22,6 +22,7 @@ website:
   description: "Cody VanZandt, a full-stack data scientist at Rice University."
   search: false
   navbar:
+    title: false
     background: light
     right:
       - text: Home
