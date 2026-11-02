@@ -19,7 +19,7 @@ Output is written to `_site/`, which is ignored by Git. Shared fonts are bundled
 
 ## Where to edit
 
-- `index.qmd`: a pictureless introduction, the descriptor “Full-stack Bayesian data science,” and “Have priors, will travel.” with burgundy italic emphasis on “priors.” The name appears in the navigation; the existing bio and most recent posts follow.
+- `index.qmd`: a pictureless introduction, the descriptor “Full-stack Bayesian data science,” and “Have priors, will travel.” with burgundy italic emphasis on “priors.” The name appears in the navigation; a compact two-paragraph bio and the most recent posts follow. Career and education details live in the CV.
 - `cv/index.qmd`: the CV in one Markdown document, with year-only employment dates, education end years, ongoing master's study, and current methods/computing details.
 - `writing.qmd`: all new writing, newest first.
 - `warm.scss`: shared typography, color, layout and CV styles over Litera.
