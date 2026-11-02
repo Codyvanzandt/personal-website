@@ -19,12 +19,14 @@ Output is written to `_site/`, which is ignored by Git. Shared fonts are bundled
 
 ## Where to edit
 
-- `index.qmd`: the current bio and portrait, followed by the three most recent posts.
-- `cv/index.qmd`: the current active CV sections in one Markdown document. Dates, roles and degree status were carried over; this is a formatting migration, not a CV update.
+- `index.qmd`: the existing bio and portrait, a quiet full-stack data scientist subtitle, and the three most recent posts.
+- `cv/index.qmd`: the CV in one Markdown document, with year-only employment dates, education end years, ongoing master's study, and current methods/computing details.
 - `writing.qmd`: all new writing, newest first.
 - `warm.scss`: shared typography, color, layout and CV styles over Litera.
 - `R/plot-style.R`: the plotting theme, categorical and continuous scales, and lighter axis-label rendering.
 - `_setup.qmd`: shared R setup for computational articles.
+
+The shared footer contains the email address; the homepage and CV do not repeat a contact-link row. The English graduate-study entry describes study rather than implying a completed degree.
 
 The homepage and writing page have intentional empty states until the first new post is published. Quarto may warn that the empty listing glob matches no documents; that warning is expected on this initial branch. Archived posts are not listed.
 

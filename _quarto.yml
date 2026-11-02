@@ -19,7 +19,7 @@ project:
 website:
   title: Cody VanZandt
   site-url: https://codyvanzandt.com
-  description: "Cody VanZandt: data science, statistics, and literature."
+  description: "Cody VanZandt, a full-stack data scientist at Rice University."
   search: false
   navbar:
     background: light
@@ -31,8 +31,7 @@ website:
       - text: CV
         href: cv/index.qmd
   page-footer:
-    left: Cody VanZandt
-    right: Written with Quarto
+    left: "[cody.a.vanzandt@gmail.com](mailto:cody.a.vanzandt@gmail.com)"
 format:
   html:
     theme: [litera, warm.scss]

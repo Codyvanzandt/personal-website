@@ -75,7 +75,8 @@ div.callout.callout-note.callout-style-simple {border:0;border-left:3px solid #8
 .eyebrow p {font:inherit;color:inherit;}
 main .home-title {font:400 46px/1.2 "Libre Baskerville",Georgia,serif;letter-spacing:-1.6px;margin:0;max-width:none;}
 .home-title em {color:#873b47;}
-.home-portrait {padding-top:36px;}
+.home-subtitle,.home-subtitle p {font:400 15px/1.6 "DM Sans",sans-serif;color:#72675f;margin:14px 0 0;letter-spacing:normal;}
+.home-portrait {padding-top:4px;}
 .home-portrait img {border-radius:50%;width:128px;height:128px;object-fit:cover;object-position:center;}
 .home-portrait p {margin:0;}
 .home-bio {grid-column:1/-1;font:400 18px/1.8 "Source Serif 4",Georgia,serif;}
@@ -108,7 +109,7 @@ body:has(.quarto-post) .writing-empty {display:none;}
 /* CV entries remain headings and paragraphs in a single Markdown file. */
 .cv-page #title-block-header h1 {font-size:41px;max-width:none;}
 .cv-page #title-block-header .subtitle {font-size:20px;}
-.cv-page #title-block-header {margin-bottom:20px;}
+.cv-page #title-block-header {border-bottom:0;margin-bottom:0;padding-bottom:0;}
 .cv-contact {font:400 13px/1.7 "DM Sans",sans-serif;color:#72675f;margin-bottom:35px;}
 .cv-page main h2 {font-size:23px;color:#873b47;border-top:1px solid #d9cfc2;padding-top:22px;margin:32px 0 25px;}
 .cv-entry {display:grid;grid-template-columns:125px minmax(0,1fr);gap:22px;margin-bottom:27px;}
@@ -119,6 +120,10 @@ body:has(.quarto-post) .writing-empty {display:none;}
 .cv-entry .cv-dates p {font:400 11px/1.6 "DM Sans",sans-serif;color:#72675f;}
 .cv-page main section > p {font:400 16px/1.8 "Source Serif 4",Georgia,serif;}
 .nav-footer p {font:inherit;color:inherit;}
+.nav-footer {font-size:12px;}
+.nav-footer a {text-decoration:none;}
+.nav-footer a:hover {text-decoration:underline;}
+.nav-footer .nav-footer-left,.nav-footer .nav-footer-left p,.nav-footer .nav-footer-left a {font:400 12px/1.6 "DM Sans",sans-serif;letter-spacing:normal;}
 .cv-entry p.cv-institution {color:#302d2a;}
 .cv-institution a {color:inherit;}
 .cv-detail a.cv-institution {color:#302d2a;text-decoration:none;}

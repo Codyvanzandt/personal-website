@@ -4,17 +4,13 @@ subtitle: "Curriculum vitae"
 body-classes: cv-page
 ---
 
-::: {.cv-contact}
-[Email](mailto:cody.a.vanzandt@gmail.com) · [GitHub](https://github.com/Codyvanzandt) · Houston, Texas
-:::
-
 
 ## Experience
 
 
 ::: {.cv-entry}
 ::: {.cv-dates}
-Aug 2023–present
+2023–present
 :::
 ::: {.cv-detail}
 ### Data Scientist
@@ -28,7 +24,7 @@ Office of the Vice Provost of Academic Affairs
 
 ::: {.cv-entry}
 ::: {.cv-dates}
-Jul 2021–Aug 2023
+2021–2023
 :::
 ::: {.cv-detail}
 ### Assistant Director
@@ -42,7 +38,7 @@ Office of Academic Advising
 
 ::: {.cv-entry}
 ::: {.cv-dates}
-Aug 2017–Aug 2019
+2017–2019
 :::
 ::: {.cv-detail}
 ### Software Engineer
@@ -59,7 +55,7 @@ Engineer for the investment bank's energy trading desk
 
 ::: {.cv-entry}
 ::: {.cv-dates}
-Jan 2023–present
+Ongoing
 :::
 ::: {.cv-detail}
 ### Master’s in Statistics
@@ -73,10 +69,10 @@ Jan 2023–present
 
 ::: {.cv-entry}
 ::: {.cv-dates}
-Aug 2019–May 2021
+2021
 :::
 ::: {.cv-detail}
-### PhD studies in English Literature
+### Graduate study in English Literature
 
 [Washington University in St. Louis](https://english.wustl.edu/){.cv-institution}
 
@@ -87,7 +83,7 @@ Computational approaches to style, genre, and plot
 
 ::: {.cv-entry}
 ::: {.cv-dates}
-Aug 2013–May 2017
+2017
 :::
 ::: {.cv-detail}
 ### BA in English and Computer Science
@@ -99,10 +95,12 @@ Drama; theater in performance; software engineering
 :::
 
 
-## Methods & tools
+## Methods & computing
 
-**Methods:** Machine learning, data science, natural language processing, network analysis, software engineering.
+**Modeling:** Bayesian statistical modeling with Stan; statistical machine learning.
 
-**Programming:** Python, R, JavaScript, SQL.
+**Data engineering:** Microsoft Fabric, SQL, Python/Polars.
 
-**Languages:** Spanish (reading knowledge).
+**Application development:** Data-intensive web applications with Svelte.
+
+**Languages:** Python, R, JavaScript, SQL.

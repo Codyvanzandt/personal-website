@@ -17,11 +17,11 @@ listing:
 
 ::: {.home-intro}
 ::: {.home-heading}
-::: {.eyebrow}
-Data science · statistics · literature
-:::
+# Cody VanZandt {.home-title}
 
-# A little data.<br>A lot of *curiosity.* {.home-title}
+::: {.home-subtitle}
+Full-stack data scientist
+:::
 :::
 
 ::: {.home-portrait}
@@ -35,9 +35,6 @@ Occupationally nomadic, I've been an academic advisor, grad student in English, 
 
 Outside the world of data, I enjoy singing sea shanties, reading fantasy fiction, and designing escape-room-style puzzle games.
 
-::: {.home-contact}
-[Say hello](mailto:cody.a.vanzandt@gmail.com) · [GitHub](https://github.com/Codyvanzandt) · [Curriculum vitae](cv/index.qmd)
-:::
 :::
 :::
 

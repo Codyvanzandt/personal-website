@@ -1,6 +1,6 @@
 ---
 title: "Notes & *essays*"
-subtitle: "On statistics, code, and the occasional literary detour."
+subtitle: "On statistical modeling, software, and working with data."
 toc: false
 body-classes: writing-page
 listing:
