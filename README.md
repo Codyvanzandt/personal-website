@@ -26,7 +26,7 @@ Output is written to `_site/`, which is ignored by Git. Shared fonts are bundled
 - `R/plot-style.R`: the plotting theme, categorical and continuous scales, and lighter axis-label rendering.
 - `_setup.qmd`: shared R setup for computational articles.
 
-The homepage has a single “Say hello ↗” email link below the bio and hides the duplicate email footer. Other pages keep the shared email footer. The English graduate-study entry describes study rather than implying a completed degree.
+The homepage introduction uses full-size charcoal text for its opening paragraph and smaller muted text for the background and personal details. It has a single “Say hello ↗” email link below the bio and hides the duplicate email footer. Other pages keep the shared email footer. The English graduate-study entry describes study rather than implying a completed degree.
 
 The homepage and writing page have intentional empty states until the first new post is published. Quarto may warn that the empty listing glob matches no documents; that warning is expected on this initial branch. Archived posts are not listed.
 
