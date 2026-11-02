@@ -1,0 +1,2 @@
+# Keep archived historical files byte-for-byte, including original line endings.
+archive/hugo-site/** -text
