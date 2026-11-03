@@ -38,7 +38,7 @@ Outside the world of data, I enjoy singing sea shanties, reading fantasy fiction
 
 ::: {.writing-heading}
 ## Recent writing
-[All writing →](writing.qmd)
+[All writing →](writing/index.qmd)
 :::
 
 ::: {.writing-empty}

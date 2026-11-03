@@ -19,11 +19,16 @@ $code-color: #873b47;
 @font-face {font-family:"Source Serif 4";src:url("fonts/Source-Serif-4.ttf") format("truetype");font-weight:200 900;font-style:normal;}
 @font-face {font-family:"Libre Baskerville";src:url("fonts/Libre-Baskerville.ttf") format("truetype");font-weight:400 700;font-style:normal;}
 @font-face {font-family:"Libre Baskerville";src:url("fonts/Libre-Baskerville-Italic.ttf") format("truetype");font-weight:400 700;font-style:italic;}
+html {scrollbar-gutter:stable;}
 body {font-family:"Source Serif 4",Georgia,serif;}
-.navbar {padding:24px 0;background:#faf7f0!important;border-bottom:1px solid #d9cfc2;}
-.navbar-container {max-width:1040px;margin:auto;}
-.navbar-brand {font-family:"Libre Baskerville",Georgia,serif;font-size:19px;letter-spacing:-.6px;}
-.navbar-nav {font-family:"DM Sans",sans-serif;font-size:13px;gap:15px;}
+/* Shared masthead: links stay visible on every page, including phones. */
+#quarto-header {-webkit-font-smoothing:antialiased;}
+#quarto-header .navbar {padding:0 62px!important;background:#faf7f0!important;border:0;}
+#quarto-header .navbar-container {width:100%;max-width:900px;min-height:94px;margin:0 auto!important;padding:0;border-bottom:1px solid #d9cfc2;flex-wrap:nowrap;}
+#quarto-header .navbar-brand {font:500 19px/1.3 "Libre Baskerville",Georgia,serif;letter-spacing:-.6px;padding:0;margin:0;}
+#quarto-header .navbar-nav {font:500 13px/1.4 "DM Sans",sans-serif;flex-direction:row;gap:26px;}
+#quarto-header .navbar-nav .nav-link {padding:12px 0;color:#6c625b;}
+#quarto-header .navbar-nav .nav-link.active {color:#873b47;text-decoration:underline;text-underline-offset:8px;}
 #quarto-content {padding-top:38px;}
 #title-block-header {border-bottom:1px solid #d9cfc2;margin-bottom:30px;padding-bottom:25px;}
 #title-block-header h1 {font-size:49px;letter-spacing:-1.6px;line-height:1.2;font-weight:400;margin-bottom:20px;max-width:17ch;text-wrap:balance;}
@@ -63,18 +68,10 @@ pre.sourceCode {font-size:12px;line-height:1.7;padding:16px;}
 div.callout.callout-note.callout-style-simple {border:0;border-left:3px solid #873b47;border-radius:0;background:transparent!important;}
 .preview-note {font:400 12px/1.7 "DM Sans",sans-serif;color:#72675f;border-top:1px solid #d9cfc2;padding-top:20px;margin-top:30px;}
 .nav-footer {font:400 11px/1.6 "DM Sans",sans-serif;color:#72675f;border-top:1px solid #d9cfc2;padding-top:22px;margin-top:30px;}
-@media(max-width:760px){#title-block-header h1{font-size:34px;}#title-block-header .subtitle{font-size:20px;}#quarto-content{padding-top:20px;}main h2{font-size:23px;}body{font-size:17px;}.navbar{padding:16px 10px;}}
+@media(max-width:760px){#title-block-header h1{font-size:34px;}#title-block-header .subtitle{font-size:20px;}#quarto-content{padding-top:20px;}main h2{font-size:23px;}body{font-size:17px;}}
 
 /* Homepage: a personal introduction followed by the most recent writing. */
 .home-page {font-size:18px;line-height:1.65;-webkit-font-smoothing:antialiased;}
-.home-page #quarto-header .navbar {padding:0 62px!important;border:0;}
-.home-page .navbar-container {width:100%;max-width:900px;min-height:94px;margin:0 auto!important;padding:0;border-bottom:1px solid #d9cfc2;flex-wrap:nowrap;}
-.home-page .navbar-brand {font-weight:500;line-height:1.3;padding:0;margin:0;}
-.home-page .navbar-toggler {display:none;}
-.home-page .navbar-collapse {display:flex!important;flex-basis:auto;}
-.home-page .navbar-nav {flex-direction:row;gap:26px;font-weight:500;line-height:1.4;}
-.home-page .navbar-nav .nav-link {padding:12px 0;color:#6c625b;}
-.home-page .navbar-nav .nav-link.active {color:#873b47;text-decoration:underline;text-underline-offset:8px;}
 .home-page #quarto-content {grid-template-columns:[screen-start] 1fr [body-start] minmax(0,780px) [body-end] 1fr [screen-end];padding:0 62px;}
 .home-page main.content {grid-column:body-start/body-end!important;margin-top:0;}
 .home-page #title-block-header {display:none;}
@@ -149,12 +146,11 @@ body:has(.quarto-post) .writing-empty {display:none;}
 .cv-page #quarto-document-content > p {font:400 16px/1.8 "Source Serif 4",Georgia,serif;}
 .cv-page #quarto-document-content > p:first-of-type {font:400 16px/1.8 "Source Serif 4",Georgia,serif;}
 @media(max-width:650px){
- .home-page #quarto-header .navbar {padding:0 26px!important;}
- .home-page .navbar-container {min-height:100px;flex-wrap:wrap;justify-content:flex-start;gap:5px 25px;padding:20px 0;}
- .home-page .navbar-brand-container {width:100%;}
- .home-page .navbar-brand {font-size:18px;}
- .home-page .navbar-collapse {flex-basis:100%;}
- .home-page .navbar-nav {gap:24px;margin-left:0!important;}
+ #quarto-header .navbar {padding:0 26px!important;}
+ #quarto-header .navbar-container {min-height:100px;flex-wrap:wrap;justify-content:flex-start;gap:5px 25px;padding:20px 0;}
+ #quarto-header .navbar-brand-container {width:100%;}
+ #quarto-header .navbar-brand {font-size:18px;}
+ #quarto-header .navbar-nav {gap:24px;margin-left:0!important;}
  .home-page #quarto-content {padding:0 26px;}
  .home-intro {padding:36px 0;}
  .home-heading {margin-bottom:22px;}

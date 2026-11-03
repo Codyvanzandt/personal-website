@@ -4,9 +4,9 @@ subtitle: "On statistical modeling, software, and working with data."
 toc: false
 body-classes: writing-page
 listing:
-  contents: posts/**/*.qmd
+  contents: ../posts/**/*.qmd
   sort: "date desc"
-  template: _templates/listing.ejs.md
+  template: ../_templates/listing.ejs.md
   fields: [date, title, description]
   date-format: "MMM D, YYYY"
   sort-ui: false

@@ -4,12 +4,13 @@ project:
   execute-dir: project
   render:
     - index.qmd
-    - writing.qmd
+    - writing/index.qmd
     - cv/index.qmd
     - posts/**/*.qmd
     - '!archive/**'
     - '!_templates/**'
   resources:
+    - writing.html
     - fonts/**
     - images/**
     - '!archive/**'
@@ -23,11 +24,12 @@ website:
   search: false
   navbar:
     background: light
+    collapse: false
     right:
       - text: Home
         href: index.qmd
       - text: Writing
-        href: writing.qmd
+        href: writing/index.qmd
       - text: CV
         href: cv/index.qmd
   page-footer:
