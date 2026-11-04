@@ -16,6 +16,8 @@ Edit the description, categories and body. Preview with the Quarto Preview butto
 
 ## Posts with R code
 
+- From any other R project, `to_post(df, "<slug>")` writes `posts/<slug>/results.csv` into this site
+  (defined in `C:/Users/codya/Documents/.Rprofile`, which is R's `~/.Rprofile`; the site path is set there).
 - Put data the post needs in `posts/<slug>/` and read it as `posts/<slug>/file.csv`
   (R runs from the site root). Keep expensive model fits in the analysis project;
   export a compact summary.
