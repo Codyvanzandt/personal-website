@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: _site
+  output-dir: docs
   execute-dir: project
   render:
     - index.qmd
@@ -11,11 +11,10 @@ project:
     - '!_templates/**'
   resources:
     - writing.html
+    - CNAME
     - fonts/**
     - images/**
     - '!archive/**'
-    - '!R/**'
-    - '!scripts/**'
     - '!_templates/**'
 website:
   title: Cody VanZandt
@@ -57,7 +56,6 @@ execute:
   warning: false
   message: false
   cache: false
-  freeze: true
 knitr:
   opts_chunk:
     dev: ragg_png

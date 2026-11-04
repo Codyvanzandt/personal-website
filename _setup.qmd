@@ -2,8 +2,6 @@
 #| label: warm-literary-setup
 #| include: false
 library(ggplot2)
-source("R/plot-style.R")
-wl_register_fonts("fonts")
-theme_set(theme_wl(base_size = 11.5))
-knitr::opts_chunk$set(render = wl_knit_print)
+library(codytools)
+cody_use(base_size = 11.5)
 ```
