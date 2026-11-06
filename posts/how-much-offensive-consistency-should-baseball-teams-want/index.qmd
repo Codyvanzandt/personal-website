@@ -166,5 +166,5 @@ Until then, I'll keep holding a candle for xCLUMP.
 
 ---
 
-*2023-2026 game results from the MLB Stats API; 1975-2025 team-seasons from Retrosheet. The information used here was obtained free of charge from and is copyrighted by Retrosheet. Interested parties may contact Retrosheet at [www.retrosheet.org](https://www.retrosheet.org).*
+*2023-2026 game results from the MLB Stats API; 1975-2025 team-seasons from Retrosheet.*
 
