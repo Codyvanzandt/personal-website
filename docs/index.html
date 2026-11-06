@@ -2782,9 +2782,9 @@ vertical-align: -.125em;
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-date','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-execute","listing-knitr","listing-lang","listing-engines","listing-language","listing-title","listing-author","listing-date","listing-categories","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -3014,6 +3014,14 @@ window.Quarto = {
 </div>
 <div id="listing-listing" class="quarto-listing quarto-listing-container-custom">
 <div class="editorial-posts">
+
+<article class="quarto-post">
+  <div class="post-date">Nov 5, 2026</div>
+  <div class="post-body">
+    <h3 class="anchored"><a href="./posts/how-much-offensive-consistency-should-baseball-teams-want/">How much offensive consistency should baseball teams want?</a></h3>
+    <p>&lt;!-- desc(5A0113B34292)[max=175]:posts/how-much-offensive-consistency-should-baseball-teams-want/index.html --&gt;</p>
+  </div>
+</article>
 
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
